@@ -163,4 +163,22 @@ main .header__themes__buttons .input-group .circle {
   font-size: 20px !important;
 }
 
+.attribution {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 11px;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+.attribution h1 {
+  display: inline;
+  font-size: 11px;
+  font-weight: normal;
+}
+
 /*# sourceMappingURL=style.css.map */
