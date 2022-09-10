@@ -8,19 +8,66 @@
   
   <title>Frontend Mentor | Calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+  <main>
+    <div class="header">
+      <h1>calc</h1>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="header__themes">
+        <p>THEME</p>
+        <div class="header__themes__buttons">
+          <div class="input-group">
+            <input type="radio" name="buttons" id="theme1" checked>
+            <label for="theme1">1</label>
+            <div class="circle"></div>
+          </div>
+          <div class="input-group">
+            <input type="radio" name="buttons" id="theme2">
+            <label for="theme2">2</label>
+            <div class="circle"></div>
+          </div>
+          <div class="input-group">
+            <input type="radio" name="buttons" id="theme3">
+            <label for="theme3">3</label>
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="viewport">
+      <p>0</p>
+    </div>
+
+    <div class="keys">
+      <input onclick="printKey('7')" type="button" value="7">
+      <input onclick="printKey('8')" type="button" value="8">
+      <input onclick="printKey('9')" type="button" value="9">
+      <input onclick="printKey('del')" class="color1" type="button" value="DEL">
+      <input onclick="printKey('4')" type="button" value="4">
+      <input onclick="printKey('5')" type="button" value="5">
+      <input onclick="printKey('6')" type="button" value="6">
+      <input onclick="printKey('+')" type="button" value="+">
+      <input onclick="printKey('1')" type="button" value="1">
+      <input onclick="printKey('2')" type="button" value="2">
+      <input onclick="printKey('3')" type="button" value="3">
+      <input onclick="printKey('-')" type="button" value="-">
+      <input onclick="printKey(',')" type="button" value=".">
+      <input onclick="printKey('0')" type="button" value="0">
+      <input onclick="printKey('/')" type="button" value="/">
+      <input onclick="printKey('*')" type="button" value="x">
+      <input onclick="printKey('res')" class="span2 color1" type="button" value="RESET">
+      <input onclick="printKey('=')" class="span2 color2" type="button" value="=">
+    </div>
+  </main>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
