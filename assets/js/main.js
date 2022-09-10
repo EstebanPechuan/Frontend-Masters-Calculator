@@ -32,3 +32,16 @@ function printKey(key) {
         arr.push('.')
     }
 }
+
+const html = document.querySelector('html')
+function theme(el) {
+    html.setAttribute('class', '')
+    
+    if (el == 1) {
+        html.classList.add('theme1')
+    } else if (el == 2) {
+        html.classList.add('theme2')
+    } else if (el == 3) {
+        html.classList.add('theme3')
+    }
+}

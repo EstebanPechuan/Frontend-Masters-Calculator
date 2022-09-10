@@ -6,7 +6,7 @@
     font-weight: 700;
 }
 
-:root {
+.theme1 {
     --main-background: hsl(222, 26%, 31%);
     --keypad-background: hsl(223, 31%, 20%);
     --screen-background: hsl(224, 36%, 15%);
@@ -18,8 +18,43 @@
     --orange-key-background: hsl(30, 25%, 89%);
     --orange-key-shadow: hsl(28, 16%, 65%);
 
+    --color-header: #fff;
     --very-dark-grayish-blue: hsl(221, 14%, 31%);
     --white: #ffffff;
+}
+
+.theme2 {
+    --main-background: hsl(0, 0%, 90%);
+    --keypad-background: hsl(0, 5%, 81%);
+    --screen-background: hsl(0, 0%, 93%);
+
+    --key-background: hsl(185, 42%, 37%);
+    --key-shadow: hsl(185, 58%, 25%);
+    --red-key-background: hsl(25, 98%, 40%);
+    --dark-red-key-shadow: hsl(25, 99%, 27%);
+    --orange-key-background: hsl(45, 7%, 89%);
+    --orange-key-shadow: hsl(35, 11%, 61%);
+
+    --color-header: hsl(60, 10%, 19%);
+    --very-dark-grayish-blue: hsl(60, 10%, 19%);
+    --white: #ffffff;
+}
+.theme3 {
+    --main-background: hsl(268, 75%, 9%);
+    --keypad-background: hsl(268, 71%, 12%);
+    --screen-background: hsl(268, 71%, 12%);
+
+    --key-background: hsl(281, 89%, 26%);
+    --key-shadow: hsl(285, 91%, 52%);
+    --red-key-background: hsl(176, 100%, 44%);
+    --dark-red-key-shadow: hsl(177, 92%, 70%);
+    --orange-key-background: hsl(268, 47%, 21%);
+    --orange-key-shadow: hsl(290, 70%, 36%);
+
+    --color-keys: hsl(52, 100%, 62%);
+    --color-header: hsl(52, 100%, 62%);
+    --very-dark-grayish-blue: hsl(268, 47%, 21%);
+    --white: #fff
 }
 
 body {
@@ -40,7 +75,7 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: var(--white);
+        color: var(--color-header);
 
         &__themes {
             display: flex;
@@ -91,7 +126,7 @@ main {
     p {
         min-height: 48px;
         display: block;
-        color: var(--white);
+        color: var(--color-header);
         text-align: right;
         font-size: 40px !important;
     }
@@ -107,7 +142,7 @@ main {
     gap: 20px;
     
     input {
-        color: var(--very-dark-grayish-blue);
+        color: var(--color-keys);
         border: none;
         display: block;
         padding: 10px 20px;
